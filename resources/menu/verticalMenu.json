@@ -57,6 +57,27 @@
         }
       ]
     },
+   
+
+    {
+      "name": "Previllage",
+      "icon": "menu-icon tf-icons mdi mdi-window-maximize",
+      "slug": "previllage",
+      "submenu": [
+        {
+          "url": "/roles",
+          "name": "ROLES",
+          "slug": "roles",
+          "badge": [
+            "label-primary fs-tiny",
+            ""
+          ]
+        }
+      ]
+    },
+       
+  
+
     {
       "name": "Layouts",
       "icon": "menu-icon tf-icons mdi mdi-window-maximize",

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\dashboard\Analytics;
+use App\Http\Controllers\previllage\Roles;
 use App\Http\Controllers\layouts\WithoutMenu;
 use App\Http\Controllers\layouts\WithoutNavbar;
 use App\Http\Controllers\layouts\Fluid;
@@ -46,7 +47,7 @@ use App\Http\Controllers\tables\Basic as TablesBasic;
 
 // Main Page Route
 Route::get('/', [Analytics::class, 'index'])->name('dashboard-analytics');
-
+Route::get('/roles', [Roles::class, 'roles'])->name('roles');
 // layout
 Route::get('/layouts/without-menu', [WithoutMenu::class, 'index'])->name('layouts-without-menu');
 Route::get('/layouts/without-navbar', [WithoutNavbar::class, 'index'])->name('layouts-without-navbar');
