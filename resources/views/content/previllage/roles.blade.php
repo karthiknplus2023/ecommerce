@@ -8,8 +8,18 @@
 </h4>
 </div><br> -->
 <!-- Basic Bootstrap Table -->
+ <style>
+.flex{
+  justify-content: space-between;
+  display: flex;
+}
+</style>
 <div class="card">
+  <div class="flex">
   <h5 class="card-header">Roles</h5>
+  <button type="button" class="btn btn-success m-2">Success</button>
+  </div>
+  
   <hr>
   <div class="table-responsive text-nowrap">
     <table class="table">
