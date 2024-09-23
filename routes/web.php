@@ -47,7 +47,14 @@ use App\Http\Controllers\tables\Basic as TablesBasic;
 
 // Main Page Route
 Route::get('/', [Analytics::class, 'index'])->name('dashboard-analytics');
+
+
+//Role
 Route::get('/roles', [Roles::class, 'roles'])->name('roles');
+Route::post('/rolesave', [Roles::class, 'RoleSave'])->name('rolesave');
+Route::get('/roleedit/{id}', [Roles::class, 'RoleEdit'])->name('roleedit');
+Route::post('/roleupdate/{id}', [Roles::class, 'RoleUpdate'])->name('roleupdate');
+Route::delete('/roledelete/{id}', [Roles::class, 'RoleDelete'])->name('roledelete');
 // layout
 Route::get('/layouts/without-menu', [WithoutMenu::class, 'index'])->name('layouts-without-menu');
 Route::get('/layouts/without-navbar', [WithoutNavbar::class, 'index'])->name('layouts-without-navbar');
